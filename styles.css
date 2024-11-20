@@ -1,0 +1,378 @@
+/* Reset margins and padding for the body and html */
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300; /* Light weight for body text */
+}
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: "Roboto Mono", monospace;
+  color: #000;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+}
+li,
+p {
+  font-size: 20px;
+  font-weight: 300;
+}
+
+strong {
+  font-weight: 400;
+}
+/* ------------------------------------------------------------ */
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  padding: 0;
+  background-image: url("images/hero-img.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  justify-content: space-between; /* This will push nav to bottom */
+}
+
+/* Hero Text */
+.hero-content {
+  margin: 126px 104px;
+  align-self: flex-start;
+  text-align: left;
+}
+
+.hero-content h1 {
+  color: #fff;
+  font-family: "Nasalization", sans-serif;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0;
+}
+/* ------------------------------------------------------------ */
+
+/* Navigation Styles */
+.main-nav {
+  width: 100%;
+  background: white;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-buttons {
+  display: flex;
+  width: 100%;
+  margin: 0;
+}
+
+.nav-button {
+  padding: 15px 33px;
+  background: white;
+  border: 1px solid black;
+  border-top: none;
+  border-bottom: none;
+  color: black;
+  font-family: "Roboto Mono", monospace;
+  font-size: 18px;
+  font-weight: 300;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex: 1; /* Changed to make buttons fill available space */
+  white-space: nowrap;
+  transition: all 0.3s ease;
+}
+
+/* Remove left border from first button */
+.nav-button:first-child {
+  border-left: none;
+}
+
+/* Remove right border from last button */
+.nav-button:last-child {
+  border-right: none;
+}
+
+/* Hover state */
+.nav-button:hover {
+  background: #b9b8b8;
+  color: white;
+}
+
+/* Active/Selected state */
+.nav-button.active {
+  background: black;
+  color: white;
+}
+
+/* Click state (temporary) */
+.nav-button:active {
+  background: black;
+  color: white;
+}
+
+/* ------------------------------------------------------------ */
+
+/* Main content sections */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Section styling */
+#intro {
+  margin-top: 50px;
+  padding: 20px;
+}
+
+.content {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+/* Text box styling */
+.text-box {
+  flex: 1;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.text-box ul {
+  padding-left: 20px;
+}
+
+/* Image box styling */
+.image-box {
+  max-width: 460px; /* Adjust the container width as needed */
+  text-align: center; /* Center-aligns the image inside the container */
+  padding: 10px; /* Optional padding */
+}
+
+.image-box img {
+  max-width: 100%; /* Ensures the image fits within the container */
+  height: 460px; /* Maintains the aspect ratio */
+  border-radius: 8px; /* Optional: gives the image rounded corners */
+  object-fit: cover;
+}
+/* ------------------------------------------------------------ */
+/* chandra-overview */
+
+#chandra-overview {
+  margin-bottom: 32px;
+  padding: 20px;
+}
+
+#chandra-overview p {
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+#chandra-overview ul {
+  list-style: disc inside;
+  margin-bottom: 20px;
+  padding-left: 0px;
+}
+
+.chandra-image {
+  width: 100%;
+  max-width: 800px;
+  display: block;
+  margin: 56px auto;
+}
+
+#chandra-timeline {
+  padding: 20px;
+}
+
+#chandra-timeline ul {
+  list-style: none;
+  padding: 0;
+}
+
+#chandra-timeline ul > li {
+  margin-bottom: 10px;
+}
+
+#chandra-timeline ul ul {
+  list-style: disc inside;
+  padding-left: 20px;
+}
+
+.images-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+.images-row img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+/* ------------------------------------------------------------ */
+/* models */
+#models {
+  padding: 20px;
+}
+
+#models h2 {
+  margin-bottom: 32px;
+}
+
+article {
+  margin-bottom: 40px;
+}
+
+article h3 {
+  margin-bottom: 10px;
+}
+
+article ul {
+  margin-top: 10px;
+  padding-left: 20px;
+  list-style-type: disc;
+}
+
+.images-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 56px; /* Space between images */
+  margin-top: 56px;
+  margin-bottom: 56px;
+  justify-content: space-around;
+}
+
+.images-row img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 8px; /* Optional for rounded corners */
+}
+/* ------------------------------------------------------------ */
+#guide {
+  padding: 20px;
+}
+/* ------------------------------------------------------------ */
+
+/* Footer */
+footer {
+  padding: 8px;
+  text-align: center;
+  font-family: "Roboto Mono", monospace;
+  font-weight: 300;
+  background-color: #000;
+}
+
+footer p {
+  color: white;
+}
+/* ------------------------------------------------------------ */
+/* Responsive design */
+@media screen and (max-width: 992px) {
+  .nav-buttons {
+    flex-direction: column;
+  }
+
+  .nav-button {
+    width: 100%;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    white-space: normal;
+  }
+
+  .nav-button:last-child {
+    border-bottom: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  h2 {
+    font-size: 24px;
+    font-weight: 400;
+  }
+  h3 {
+    font-size: 20px;
+    font-weight: 400;
+  }
+  li,
+  p {
+    font-size: 16px;
+    font-weight: 300;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .intro-content {
+    flex-direction: column;
+  }
+
+  .text-content,
+  .image-content {
+    flex: 1 1 100%; /* Full width on smaller screens */
+  }
+
+  .intro-image {
+    max-width: 80%; /* Slightly smaller image for smaller screens */
+  }
+  .images-row {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .image-box img {
+    height: 320px;
+  }
+}
+
+/* Additional responsive adjustments for very small screens */
+@media screen and (max-width: 480px) {
+  .hero-content {
+    margin: 40px 20px;
+  }
+
+  /* .hero {
+    height: 90%;
+  } */
+
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .nav-button {
+    font-size: 16px;
+    padding: 12px 0px;
+  }
+  .text-box ul,
+  #chandra-timeline ul ul,
+  #chandra-overview ul {
+    padding-left: 0px;
+  }
+}
