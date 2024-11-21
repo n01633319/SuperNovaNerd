@@ -22,9 +22,13 @@
         <h1>
           Let's Build <br />
           Super Nova <br />
-          3D Models together! hello
+          3D Models together!
         </h1>
       </div>
+    </header>
+
+    <main>
+      <!-- nav -->
       <nav class="main-nav">
         <div class="nav-buttons">
           <a href="#intro" class="nav-button">Introduction</a>
@@ -37,10 +41,8 @@
           >
         </div>
       </nav>
-    </header>
-
-    <main>
-      <section id="intro">
+      <!-- nav ends -->
+      <section id="intro" class="padding20">
         <h2>I. What is a Supernova Remnant?</h2>
         <p>
           When a star dies, it can go out with a powerful explosion called a
@@ -78,7 +80,7 @@
         </div>
       </section>
       <!-- ----------------------------------------------------------------------------- -->
-      <section id="chandra-overview">
+      <section id="chandra-overview" class="padding20">
         <h2>II. Meet the Chandra X-ray Observatory</h2>
         <p>
           The Chandra X-ray Observatory, launched in 1999, is NASA's most
@@ -105,7 +107,7 @@
         />
       </section>
 
-      <section id="chandra-timeline">
+      <section id="chandra-timeline" class="padding20">
         <h3>Chandra Timeline: A Legacy of Discovery</h3>
         <ul>
           <li><strong>1999</strong>: Chandra is launched.</li>
@@ -150,15 +152,24 @@
           </ul>
         </ul>
         <div class="images-row">
-          <img src="images/hero-img.png" alt="Image 1" />
-          <img src="images/hero-img.png" alt="Image 2" />
-          <img src="images/hero-img.png" alt="Image 3" />
+          <img
+            src="images/Chandra X-ray Observatory-Camera.png"
+            alt="Image 1"
+          />
+          <img
+            src="images/Chandra X-ray Observatory -2-Camera.png"
+            alt="Image 2"
+          />
+          <img
+            src="images/Chandra X-ray Observatory -3-Camera.png"
+            alt="Image 3"
+          />
         </div>
       </section>
 
       <!-- ----------------------------------------------------------------------------- -->
 
-      <section id="models">
+      <section id="models" class="padding20">
         <h2>III. Featured Supernova Remnants: 3D Printable Wonders</h2>
 
         <!-- Tycho Supernova Remnant -->
@@ -183,9 +194,9 @@
             </li>
           </ul>
           <div class="images-row">
-            <img src="images/hero-img.png" alt="Image 1" />
-            <img src="images/hero-img.png" alt="Image 2" />
-            <img src="images/hero-img.png" alt="Image 3" />
+            <img src="images/TYCHO-1-Camera.png" alt="Image 1" />
+            <img src="images/TYCHO-2-Camera.png" alt="Image 2" />
+            <img src="images/TYCHO-3-Camera.png" alt="Image 3" />
           </div>
           <img
             src="images/hero-img.png"
@@ -216,9 +227,9 @@
             <li>The 3D model shows the blast wave and ejected material.</li>
           </ul>
           <div class="images-row">
-            <img src="images/hero-img.png" alt="Image 1" />
-            <img src="images/hero-img.png" alt="Image 2" />
-            <img src="images/hero-img.png" alt="Image 3" />
+            <img src="images/V745-1-Camera.png" alt="Image 1" />
+            <img src="images/V745-2-Camera.png" alt="Image 2" />
+            <img src="images/V745-3-Camera.png" alt="Image 3" />
           </div>
           <img
             src="images/hero-img.png"
@@ -250,9 +261,9 @@
             </li>
           </ul>
           <div class="images-row">
-            <img src="images/hero-img.png" alt="Image 1" />
-            <img src="images/hero-img.png" alt="Image 2" />
-            <img src="images/hero-img.png" alt="Image 3" />
+            <img src="images/IC443-1-Camera.png" alt="Image 1" />
+            <img src="images/IC443-2-Camera.png" alt="Image 2" />
+            <img src="images/IC443-3-Camera.png" alt="Image 3" />
           </div>
           <img
             src="images/hero-img.png"
@@ -279,9 +290,9 @@
             <li>The 3D model shows the star, disk, and jets.</li>
           </ul>
           <div class="images-row">
-            <img src="images/hero-img.png" alt="Image 1" />
-            <img src="images/hero-img.png" alt="Image 2" />
-            <img src="images/hero-img.png" alt="Image 3" />
+            <img src="images/DG Tau -1-Camera.png" alt="Image 1" />
+            <img src="images/DG Tau -2-Camera.png" alt="Image 2" />
+            <img src="images/DG Tau -3-Camera.png" alt="Image 3" />
           </div>
           <img
             src="images/hero-img.png"
@@ -291,7 +302,7 @@
         </article>
 
         <!-- Crab Nebula -->
-        <article>
+        <!-- <article>
           <h3>5. Crab Nebula</h3>
           <p>
             The Crab Nebula is a famous supernova remnant with a central pulsar,
@@ -321,12 +332,12 @@
             alt="Chandra X-ray Observatory"
             class="chandra-image"
           />
-        </article>
+        </article> -->
       </section>
 
       <!-- ----------------------------------------------------------------------------- -->
 
-      <section id="guide">
+      <section id="guide" class="padding20">
         <h2>IV. How to 3D Print Your Own Supernova Remnant</h2>
 
         <h3>Step-by-Step Guide</h3>
@@ -364,6 +375,11 @@
             to make unique models.
           </li>
         </ul>
+        <img
+          src="images/hero-img-2.png"
+          alt="Chandra X-ray Observatory"
+          class="chandra-image"
+        />
 
         <h3>
           Now that you know about supernova remnants, have fun 3D printing your
@@ -380,66 +396,50 @@
 
     <!-- JavaScript code goes here, just before closing body tag -->
     <script>
-      document.addEventListener("DOMContentLoaded", function () {
-        const sections = document.querySelectorAll("section");
-        const navButtons = document.querySelectorAll(".nav-button");
+      document.addEventListener("DOMContentLoaded", () => {
         const nav = document.querySelector(".main-nav");
-        const hero = document.querySelector(".hero");
+        const navButtons = document.querySelectorAll(".nav-button");
+        const sections = document.querySelectorAll("section");
 
-        // Get the original position of nav relative to the document
-        const navOriginalPosition = nav.offsetTop;
+        // Intersection Observer options
+        const observerOptions = {
+          root: null, // viewport
+          rootMargin: "-50% 0px -50% 0px", // triggers when section is in middle of viewport
+          threshold: 0,
+        };
 
-        // Set initial active state
-        function setActiveButton(button) {
-          navButtons.forEach((btn) => btn.classList.remove("active"));
-          button.classList.add("active");
-        }
+        // Create Intersection Observer
+        const sectionObserver = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              // Remove active from all buttons
+              navButtons.forEach((btn) => btn.classList.remove("active"));
 
-        // Handle click events
+              // Find and activate corresponding nav button
+              const activeButton = document.querySelector(
+                `.nav-button[href="#${entry.target.id}"]`
+              );
+              if (activeButton) {
+                activeButton.classList.add("active");
+              }
+            }
+          });
+        }, observerOptions);
+
+        // Observe all sections
+        sections.forEach((section) => sectionObserver.observe(section));
+
+        // Smooth scroll for nav buttons
         navButtons.forEach((button) => {
           button.addEventListener("click", (e) => {
             e.preventDefault();
-            setActiveButton(button); // Set active state immediately on click
             const targetId = button.getAttribute("href");
             const targetSection = document.querySelector(targetId);
-            const navHeight = nav.offsetHeight;
 
-            // Calculate scroll position accounting for nav height
-            const targetPosition = targetSection.offsetTop - navHeight;
-
-            window.scrollTo({
-              top: targetPosition,
+            targetSection.scrollIntoView({
               behavior: "smooth",
+              block: "start",
             });
-          });
-        });
-
-        // Update active state on scroll
-        window.addEventListener("scroll", () => {
-          let current = "";
-          const scrollPosition = window.pageYOffset;
-
-          // Handle sticky navigation
-          if (scrollPosition >= navOriginalPosition) {
-            nav.classList.add("sticky");
-          } else {
-            nav.classList.remove("sticky");
-          }
-
-          // Update active section based on scroll position
-          sections.forEach((section) => {
-            const sectionTop = section.offsetTop - nav.offsetHeight - 10;
-            if (scrollPosition >= sectionTop) {
-              current = section.getAttribute("id");
-            }
-          });
-
-          // Update active button based on current section
-          navButtons.forEach((button) => {
-            button.classList.remove("active");
-            if (button.getAttribute("href") === `#${current}`) {
-              button.classList.add("active");
-            }
           });
         });
       });
