@@ -141,6 +141,7 @@ main {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 .padding20 {
@@ -301,6 +302,10 @@ footer p {
 /* ------------------------------------------------------------ */
 /* Responsive design */
 @media screen and (max-width: 992px) {
+  .hero {
+    height: 50vh;
+  }
+
   .nav-buttons {
     flex-direction: column;
   }
@@ -315,6 +320,10 @@ footer p {
 
   .nav-button:last-child {
     border-bottom: none;
+  }
+
+  .padding20 {
+    margin: 0 40px;
   }
 }
 
