@@ -27,6 +27,50 @@ p {
 strong {
   font-weight: 400;
 }
+
+model-viewer {
+  width: 80vh;
+  height: 70vh;
+}
+
+.center-model {
+  display: block; /* Ensures it's treated as a block-level element */
+  margin: 0 auto; /* Centers horizontally */
+  max-width: 100%; /* Ensures it doesn’t overflow */
+}
+
+/* ------------------------------------------------------------ */
+
+.rolling-text-bar {
+  position: fixed; /* Ensures it stays at the top of the page */
+  top: 0; /* Aligns it to the top */
+  width: 100%; /* Covers the entire width of the screen */
+  background-color: black; /* Black background */
+  color: white; /* White text */
+  font-size: 14px; /* Adjust for thin appearance */
+  z-index: 1000; /* Keeps it above all other elements */
+  overflow: hidden; /* Hides overflow to ensure smooth animation */
+  height: 30px; /* Thin row height */
+  display: flex; /* Centers text vertically and horizontally */
+  align-items: center; /* Vertical centering */
+}
+
+.rolling-text-bar p {
+  display: inline-block; /* Keeps the text inline */
+  white-space: nowrap; /* Prevents wrapping */
+  padding-left: 100%; /* Starts the text off-screen */
+  animation: roll-text 10s linear infinite; /* Animates the text */
+}
+
+@keyframes roll-text {
+  from {
+    transform: translateX(0); /* Starts at its original position */
+  }
+  to {
+    transform: translateX(-100%); /* Moves the text off-screen */
+  }
+}
+
 /* ------------------------------------------------------------ */
 
 /* Hero Section */
@@ -324,6 +368,11 @@ footer p {
 
   .padding20 {
     margin: 0 40px;
+  }
+
+  model-viewer {
+    width: 45vh;
+    height: 40vh;
   }
 }
 
