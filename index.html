@@ -15,8 +15,18 @@
     <link rel="stylesheet" href="https://use.typekit.net/wla7wev.css" />
     <!-- Custom CSS -->
     <link rel="stylesheet" href="styles.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
   </head>
   <body>
+    <div class="rolling-text-bar">
+      <p>
+        ✦ This website is built with AI and is just for experimental and
+        educational purposes ✦
+      </p>
+    </div>
     <header class="hero">
       <div class="hero-content">
         <h1>
@@ -75,7 +85,10 @@
 
           <!-- Right box for placeholder image -->
           <div class="image-box">
-            <img src="images/hero-img.png" alt="Description of the image" />
+            <img
+              src="images/_20240318_on_chandra_space_telescope.jpg"
+              alt="Description of the image"
+            />
           </div>
         </div>
       </section>
@@ -100,11 +113,15 @@
             Smithsonian Astrophysical Observatory operates it daily.
           </li>
         </ul>
-        <img
-          src="images/Chandra X-ray Observatory.png"
-          alt="Chandra X-ray Observatory"
-          class="chandra-image"
-        />
+        <model-viewer
+          class="center-model"
+          src="assets/3Dmodels/chandra-150k-std.glb"
+          ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+          alt="A 3D model of bottle of shape"
+          ar
+          auto-rotate
+          camera-controls
+        ></model-viewer>
       </section>
 
       <section id="chandra-timeline" class="padding20">
@@ -198,11 +215,15 @@
             <img src="images/TYCHO-2-Camera.png" alt="Image 2" />
             <img src="images/TYCHO-3-Camera.png" alt="Image 3" />
           </div>
-          <img
-            src="images/Tycho Supernova Remnant.png"
-            alt="Chandra X-ray Observatory"
-            class="chandra-image"
-          />
+          <model-viewer
+            class="center-model"
+            src="assets/3Dmodels/TYCHO-150k-4096_std.glb"
+            ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+            alt="A 3D model of bottle of shape"
+            ar
+            auto-rotate
+            camera-controls
+          ></model-viewer>
         </article>
 
         <!-- V745 Scorpii -->
@@ -231,11 +252,15 @@
             <img src="images/V745-2-Camera.png" alt="Image 2" />
             <img src="images/V745-3-Camera.png" alt="Image 3" />
           </div>
-          <img
-            src="images/V745 SCO.png"
-            alt="Chandra X-ray Observatory"
-            class="chandra-image"
-          />
+          <model-viewer
+            class="center-model"
+            src="assets/3Dmodels/V745SCO-150k-4096_std.glb"
+            ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+            alt="A 3D model of bottle of shape"
+            ar
+            auto-rotate
+            camera-controls
+          ></model-viewer>
         </article>
 
         <!-- IC 443 (Jellyfish Nebula) -->
@@ -265,11 +290,15 @@
             <img src="images/IC443-2-Camera.png" alt="Image 2" />
             <img src="images/IC443-3-Camera.png" alt="Image 3" />
           </div>
-          <img
-            src="images/IC 443.png"
-            alt="Chandra X-ray Observatory"
-            class="chandra-image"
-          />
+          <model-viewer
+            class="center-model"
+            src="assets/3Dmodels/IC443-150k-4096_std.glb"
+            ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+            alt="A 3D model of bottle of shape"
+            ar
+            auto-rotate
+            camera-controls
+          ></model-viewer>
         </article>
 
         <!-- DG Tau -->
@@ -294,11 +323,15 @@
             <img src="images/DG Tau -2-Camera.png" alt="Image 2" />
             <img src="images/DG Tau -3-Camera.png" alt="Image 3" />
           </div>
-          <img
-            src="images/DG Tau.png"
-            alt="Chandra X-ray Observatory"
-            class="chandra-image"
-          />
+          <model-viewer
+            class="center-model"
+            src="assets/3Dmodels/DGTAU-150k-2048_std.glb"
+            ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
+            alt="A 3D model of bottle of shape"
+            ar
+            auto-rotate
+            camera-controls
+          ></model-viewer>
         </article>
 
         <!-- Crab Nebula -->
