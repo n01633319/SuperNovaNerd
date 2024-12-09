@@ -114,14 +114,52 @@
           </li>
         </ul>
         <model-viewer
-          class="center-model"
           src="assets/3Dmodels/chandra-150k-std.glb"
-          ios-src="https://modelviewer.dev/shared-assets/models/Astronaut.usdz"
-          alt="A 3D model of bottle of shape"
+          class="center-model"
           ar
-          auto-rotate
           camera-controls
-        ></model-viewer>
+          tone-mapping="neutral"
+          poster="poster.webp"
+          shadow-intensity="1"
+        >
+          <button
+            class="Hotspot"
+            slot="hotspot-1"
+            data-position="-10.092637588695766m 2.2994861060222265m 0.8073701031487115m"
+            data-normal="-0.34787085183323774m -0.9375345918671073m -0.0038418091303460767m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation">Sunshade Door</div></button
+          ><button
+            class="Hotspot"
+            slot="hotspot-4"
+            data-position="-6.0702392853657585m 0.32774123778688347m -6.54973615739371m"
+            data-normal="-0.4943164759448794m 0.8692342344993725m -0.009114120019245605m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation">Solar Array</div></button
+          ><button
+            class="Hotspot"
+            slot="hotspot-6"
+            data-position="9.716276575208738m 0.9584535680676822m -0.030506595493328348m"
+            data-normal="0.009383080625774098m 0.9804798180534259m -0.19639573362955598m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation">
+              High Resolution Camera (HRC)
+            </div></button
+          ><button
+            class="Hotspot"
+            slot="hotspot-7"
+            data-position="10.784499444711628m -0.46394367494172783m 0.47796756594104295m"
+            data-normal="0.9998571427896311m -0.006435236821489333m 0.015629515015078706m"
+            data-visibility-attribute="visible"
+          >
+            <div class="HotspotAnnotation">
+              ntegrated Science Instrument Module (ISIM)
+            </div>
+          </button>
+        </model-viewer>
       </section>
 
       <section id="chandra-timeline" class="padding20">
